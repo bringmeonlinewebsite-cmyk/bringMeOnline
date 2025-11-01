@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" />
+
+        <link rel="icon" type="image/png" href="images/logo_new.png">
+        <title>bringMeOnline.co.in</title>
+    </head>
+    <body>
+        <h1 class="main-header">
+            <img src="images/banner.png" alt="bringMeOnline logo" class="logo">
+            <div class="h1-content">
+                <div class="header-tagline"><span>bring your Business online with</span> <img class="label" src="images/label.png" /></div>
+            </div>
+        </h1>
+
+        <div class="headline font-style-theme">YEARS OF EXPERIENCE. &nbsp;&nbsp; FUTURE-READY SOFTWARE SOLUTIONS. <span class="font-small">(Powered by AI)</span></div>
+        
+        <div class="container margin-b-10">
+            <div class="specialization">
+                <div class="static-website">
+                    <h3 class="font-style-theme">Business Website</h3>
+                    <p>Establish Your Professional Online Presence</p>
+                    <p>A high-impact digital foundation for your business. Designed to inform, engage, and convert visitors into leads. Showcase your brand, services, and contact information with a modern, mobile-responsive, and search engine-optimized website.</p>
+                    <p>* 24/7 Availability: Your business information is always accessible.</p>
+                    <p><strong>Price: &#8377;7000/- onwards</strong></p>
+                    <p>2 Months* no cost maintenance.</p>
+                    <button id="static-website-button">Get Started</button>
+                </div>
+                <div class="e-commerce-website">
+                    <h3 class="font-style-theme">E-commerce</h3>
+                    <p>Launch and Scale Your Online Store</p>
+                    <p>The complete solution for selling products or services directly to your customers. We deliver a secure, fast, and user-friendly shopping experience complete with robust inventory management, flexible payment gateways, and seamless checkout processes.</p>
+                    <p>Increase Sales, Secure Transactions, Easy Management</p>
+                    <p><strong>Starts at &#8377;49000/- onwards</strong></p>
+                    <p>2 Months* no cost maintenance.</p>
+                    <button id="e-commerce-website-button">Get Started</button>
+                </div>
+                <div class="management-system">
+                    <h3 class="font-style-theme">Management System</h3>
+                    <p>Streamline Operations with a Custom System.</p>
+                    <p>Go beyond a standard website with a tailored web-based management solution designed to automate internal processes. Whether it's a CRM, inventory tracker, project management tool, or booking system, we build the application you need to maximize efficiency. Automate repetitive, time-consuming tasks and many more benefits.</p>
+                    <!-- <p>* Boost Efficiency: Automate repetitive, time-consuming tasks.</p> -->
+                    <p><strong>Price: &#8377;69000/- onwards</strong></p>
+                    <p>3 Months* no cost maintenance.</p>
+                    <button id="management-system-button">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="headline-2 font-style-theme">OUR &nbsp;&nbsp; FUTURISTIC &nbsp;&nbsp; VISION</div>
+
+        <div class="container margin-b-5">
+            <div class="specialization">
+                <div class="msg-innovation">
+                    <h3 class="font-style-theme">SECURE MESSAGING</h3>
+                    <p>An indegenius, secure and non-trackable messaging solution is launching soon.</p>
+                </div>
+                <div class="iot-innovation">
+                    <h3 class="font-style-theme">IOT</h3>
+                    <p>A branch to handle IoT solutions and focus on chipset designing (to power up India's semiconductor infrastructure).</p>
+                </div>
+                <div class="ai-innovation">
+                    <h3 class="font-style-theme">AI INNOVATION</h3>
+                    <p>To take India's AI innovation to nextLevel.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed Footer -->
+        <footer class="fixed-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>bringMeOnline.co.in</h4>
+                    <p>Bringing your business online with professional web solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Business Websites</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Management Systems</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 bringmeonline.website@gmail.com</p>
+                    <!-- <p>📞 +91 70182 93931</p> -->
+                </div>
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>We are a startup. A team mix of young enthusiasts and highly experienced professionals. Guiding youth towards innovation and AI.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 bringMeOnline.co.in. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Popup Modal -->
+        <div id="popup-modal" class="popup-modal">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <h2 class="font-style-theme">Get Started with Your Project</h2>
+                <p>Thank you for your interest! Please fill out the form below and we'll get back to you in few some hours.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="business-website">Business Website</option>
+                            <option value="e-commerce">E-commerce</option>
+                            <option value="management-system">Management System</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project requirements... (basic idea, features or any sample website link.)"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="scripts/events.js" type="text/javascript"></script>
+    </body>
+</html>
