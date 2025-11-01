@@ -712,6 +712,7 @@ h1 .label {
     font-size: 28px;
     font-weight: 700;
     display: inline-block;
+    text-align: center;
 }
 
 .headline-2 {
@@ -719,6 +720,7 @@ h1 .label {
     font-size: 32px;
     font-weight: 700;
     display: inline-block;
+    text-align: center;
 }
 
 .font-style-theme {
@@ -932,6 +934,9 @@ h1 .label {
     .footer-content {
         padding: 0.8rem 0.5rem 0.5rem 0.5rem;
         gap: 0.8rem;
+    }
+    .header-tagline .label {
+        height: 35px;
     }
 }
 
