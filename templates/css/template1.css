@@ -1,0 +1,81 @@
+/* Custom CSS (style.css) */
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif; /* Modern, readable font */
+    color: #333; /* Dark gray for good contrast */
+}
+
+/* Custom Colors and Utilities */
+.text-dark-blue {
+    color: #1C3B6F !important;
+}
+
+.bg-dark-blue {
+    background-color: #1C3B6F !important;
+}
+
+.text-accent {
+    color: #00C4B8 !important; /* Vibrant Teal Accent */
+}
+
+.custom-bg-primary {
+    background-color: #1C3B6F !important;
+}
+
+.bg-light-gray {
+    background-color: #F8F9FA !important;
+}
+
+/* Button Customization (Hero CTA) */
+.custom-btn-primary {
+    background-color: #00C4B8; /* Use Accent Teal */
+    border-color: #00C4B8;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.custom-btn-primary:hover {
+    background-color: #00998f; /* Slightly darker teal on hover */
+    border-color: #00998f;
+}
+
+.custom-btn-secondary {
+    background-color: white;
+    color: #1C3B6F; /* Dark Blue text */
+    border-color: white;
+    transition: all 0.3s ease;
+}
+
+.custom-btn-secondary:hover {
+    background-color: #e9ecef;
+    color: #1C3B6F;
+    border-color: #e9ecef;
+}
+
+/* Navigation Specifics */
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.nav-link:hover {
+    color: #00C4B8 !important; /* Teal accent on hover */
+}
+
+/* Section Padding */
+section {
+    padding: 60px 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('your-background-image.jpg') no-repeat center center; /* Optional: subtle background image/pattern */
+    background-size: cover;
+}
+
+/* Services Section Cards */
+.shadow-sm:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

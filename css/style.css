@@ -938,6 +938,9 @@ h1 .label {
     .header-tagline .label {
         height: 35px;
     }
+    .headline-2 {
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 200px) and (max-width: 944px) {

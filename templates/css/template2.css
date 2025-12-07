@@ -1,0 +1,182 @@
+/* Custom CSS (style.css) for Hotel Theme */
+
+/* General Styling & Fonts */
+body {
+    font-family: 'Raleway', sans-serif; /* Modern, clean body text */
+    color: #333; /* Dark gray for good contrast */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Elegant, classic headings */
+    color: #1A3B5D; /* Deep Ocean Blue for headings */
+}
+
+/* Custom Colors and Utilities */
+.text-dark-blue {
+    color: #1A3B5D !important;
+}
+
+.bg-dark-blue {
+    background-color: #1A3B5D !important;
+}
+
+.text-accent {
+    color: #C79F5E !important; /* Golden Accent */
+}
+
+.custom-bg-primary {
+    background-color: #1A3B5D !important; /* Deep Ocean Blue */
+}
+
+.bg-light-gray {
+    background-color: #F5F5DC !important; /* Light Taupe */
+}
+
+/* Custom Button Styling */
+.custom-btn-primary {
+    background-color: #C79F5E; /* Golden Accent */
+    border-color: #C79F5E;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 12px 30px;
+    font-weight: 500;
+}
+
+.custom-btn-primary:hover {
+    background-color: #b38b4d; /* Slightly darker gold on hover */
+    border-color: #b38b4d;
+    color: white;
+}
+
+.custom-btn-secondary {
+    background-color: white;
+    color: #1A3B5D; /* Deep Ocean Blue text */
+    border-color: white;
+    transition: all 0.3s ease;
+    padding: 12px 30px;
+    font-weight: 500;
+}
+
+.custom-btn-secondary:hover {
+    background-color: #e9ecef;
+    color: #1A3B5D;
+    border-color: #e9ecef;
+}
+
+/* Navigation Specifics */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-weight: 500;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: white !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh; /* Make hero section full height */
+    background-color: #333; /* Fallback for parallax */
+    position: relative;
+}
+
+.hero-section .overlay-content {
+    position: relative; /* Ensure content is above any potential overlay */
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3); /* Subtle dark overlay for text readability */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero-section h1 {
+    font-size: 4rem; /* Larger hero title */
+    color: white;
+}
+
+/* Parallax Effect - KEY CSS */
+.parallax {
+    background-attachment: fixed; /* Key for parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Needed for overlay */
+}
+
+.parallax-quote {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay for Parallax Sections (to ensure text readability) */
+.parallax:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+.parallax .overlay-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section Padding */
+section {
+    padding: 80px 0;
+}
+
+/* Image Styling */
+.img-fluid.rounded.shadow-lg {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid.rounded.shadow-lg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+/* Rooms Section Cards */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Amenities Icons */
+.amenities i {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+/* Footer Social Icons */
+.social-icons a {
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #C79F5E !important; /* Golden accent on hover */
+}

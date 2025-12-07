@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tile & Stone Business | Modern Design & Quality</title>
+    <style>
+        /* Minimal inline CSS for clarity. Move to a separate styles.css file for production! */
+        body { font-family: sans-serif; margin: 0; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header, footer { background-color: #1a1a1a; color: white; padding: 15px 0; }
+        .hero { min-height: 80vh; background: lightgray; text-align: center; display: flex; align-items: center; justify-content: center; color: white; }
+        .section { padding: 80px 0; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); display: none; /* Hide by default */ justify-content: center; align-items: center; z-index: 1000; }
+        .popup-content { background: white; padding: 40px; border-radius: 8px; width: 90%; max-width: 400px; position: relative; }
+    </style>
+    <link rel="stylesheet" href="css/template3.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Tile & Stone Co.</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#materials">Materials</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#" id="open-popup-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Crafting Spaces with Nature's Finest</h1>
+                <p>Premium Stone & Tile Solutions for Modern Living</p>
+                <button id="cta-btn">View Our Portfolio</button>
+            </div>
+            </section>
+
+        <section class="section about" id="about">
+            <div class="container">
+                <h2>Our Commitment to Quality</h2>
+                <p>We source exquisite marble, granite, slate, and ceramic from around the globe to ensure unparalleled quality and durability for your project.</p>
+                <div class="services-list">
+                    <div>Design Consultation</div>
+                    <div>Installation Experts</div>
+                    <div>Material Sourcing</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="gallery-grid">
+                    <div class="project-item">
+                        <img src="images/template3/1.png" alt="Modern Kitchen Countertop">
+                        <h3>Modern Kitchen Countertop</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/template3/2.png" alt="Luxury Bathroom Flooring">
+                        <h3>Luxury Bathroom Flooring</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/template3/3.png" alt="Exterior Stone Cladding">
+                        <h3>Exterior Stone Cladding</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-final" style="background-color: #f4f4f4; text-align: center;">
+            <div class="container">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss your vision. Contact us today for a free estimate.</p>
+                <button id="open-popup-footer-btn">Get In Touch</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Tile & Stone Business. All Rights Reserved.</p>
+            <div class="contact-info">
+                <p>123 Design St, Manali</p> 
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup-overlay" id="contact-popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup-btn">&times;</span>
+            <h3>Schedule a Consultation</h3>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="project">Project Details:</label>
+                <textarea id="project" name="project" rows="4" required></textarea><br><br>
+                
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/template3.js"></script>
+
+    </body>
+</html>
